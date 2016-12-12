@@ -1,0 +1,28 @@
+{
+  "name": "Account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "background": {
+      "type": "belongsTo",
+      "model": "Background",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {},
+  "scope": {
+    "include": [
+      "background"
+    ]
+  }
+}
